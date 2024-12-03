@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <!--Just the logo.. Don't mind this-->
+    <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    <g><path fill="#fff"
+    d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+    c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7    c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2  c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+    </g>
+    </svg>
+    <h1>The Adoenixes AI Globe</h1>
+    </div>
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <div class="content flex">
+      <p>By @Aditya Mukherjee | Free Preview Version</p>
+    </div>
+    <!--Content ends-->
+
+<!-- Chatbot Toggler -->
+<button id="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-rounded">close</span>
+  </button>
+
+  <div class="chatbot-popup">
+    <!-- Chatbot Header -->
+    <div class="chat-header">
+      <div class="header-info">
+        <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+          <path
+            d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"
+          />
+        </svg>
+        <h2 class="logo-text">Lilly AInixes</h2>
+      </div>
+      <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+    </div>
+
+    <!-- Chatbot Body -->
+    <div class="chat-body">
+      <div class="message bot-message">
+        <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+          <path
+            d="M738.3 287.6H285.7c-59 0-106.8 47.8-106.8 106.8v303.1c0 59 47.8 106.8 106.8 106.8h81.5v111.1c0 .7.8 1.1 1.4.7l166.9-110.6 41.8-.8h117.4l43.6-.4c59 0 106.8-47.8 106.8-106.8V394.5c0-59-47.8-106.9-106.8-106.9zM351.7 448.2c0-29.5 23.9-53.5 53.5-53.5s53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5-53.5-23.9-53.5-53.5zm157.9 267.1c-67.8 0-123.8-47.5-132.3-109h264.6c-8.6 61.5-64.5 109-132.3 109zm110-213.7c-29.5 0-53.5-23.9-53.5-53.5s23.9-53.5 53.5-53.5 53.5 23.9 53.5 53.5-23.9 53.5-53.5 53.5zM867.2 644.5V453.1h26.5c19.4 0 35.1 15.7 35.1 35.1v121.1c0 19.4-15.7 35.1-35.1 35.1h-26.5zM95.2 609.4V488.2c0-19.4 15.7-35.1 35.1-35.1h26.5v191.3h-26.5c-19.4 0-35.1-15.7-35.1-35.1zM561.5 149.6c0 23.4-15.6 43.3-36.9 49.7v44.9h-30v-44.9c-21.4-6.5-36.9-26.3-36.9-49.7 0-28.6 23.3-51.9 51.9-51.9s51.9 23.3 51.9 51.9z"
+          />
+        </svg>
+        <!-- prettier-ignore -->
+        <div class="message-text"> Hey there  <br /> How can I help you today? </div>
+      </div>
+    </div>
+
+    <!-- Chatbot Footer -->
+    <div class="chat-footer">
+      <form action="#" class="chat-form">
+        <textarea placeholder="Message..." class="message-input" required></textarea>
+        <div class="chat-controls">
+          <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
+          <div class="file-upload-wrapper">
+            <input type="file" accept="image/*" id="file-input" hidden />
+            <img src="#" />
+            <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+            <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+          </div>
+          <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Linking Emoji Mart script for emoji picker -->
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+  <!-- Linking custom script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
