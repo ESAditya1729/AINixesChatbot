@@ -62,11 +62,22 @@ const generateBotResponse = async (incomingMessageDiv) => {
 
     // Extract and display bot's response text
     let apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
-    if (userData.message.toLowerCase().includes("what's your name?")) {
-        apiResponseText = "Hi! I'm Lilly, Nice to meet you";
-      } else if (userData.message.toLowerCase().includes("bye")) {
-        apiResponseText = "Goodbye! Have a great day!";
-      }      
+    const lowerMsg = userData.message.toLowerCase();
+if (lowerMsg.includes("your name")) {
+  apiResponseText = "Hi! I'm Lilly, your student assistant from Amity University Online. 😊";
+} else if (lowerMsg.includes("exam schedule")) {
+  apiResponseText = "You can check your exam schedule by logging into the university LMS portal under 'My Courses' → 'Assessments'.";
+} else if (lowerMsg.includes("assignment") && lowerMsg.includes("last date")) {
+  apiResponseText = "Assignment submission deadlines vary by subject, but you can always find them under the 'Assignments' tab on the LMS.";
+} else if (lowerMsg.includes("grades") || lowerMsg.includes("results")) {
+  apiResponseText = "You can check your grades by navigating to the 'My Performance' section on the Amity LMS.";
+} else if (lowerMsg.includes("contact") && lowerMsg.includes("professor")) {
+  apiResponseText = "You can email your professor via the faculty directory in the LMS, or send a message through the 'Ask a Question' section.";
+} else if (lowerMsg.includes("bca syllabus") || lowerMsg.includes("bca curriculum")) {
+  apiResponseText = "The BCA curriculum includes Programming, Web Development, Data Structures, DBMS, and more. You can find the complete syllabus on the university portal.";
+} else if (lowerMsg.includes("bye") || lowerMsg.includes("see you")) {
+  apiResponseText = "Goodbye! Feel free to chat anytime you need help.";
+}      
     messageElement.innerText = apiResponseText;
 
     // Add bot response to chat history
